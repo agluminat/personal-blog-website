@@ -33,14 +33,13 @@
 }
 
 .menu:hover {
-    background-color: white;
+    background-color: #FFF;
 }
 
 .content {
     background-color: #F09A9D;
     border-radius: 10px;
     margin-top: 10px;
-    /* display: grid; */
     grid-gap: 20px;
 }
 
@@ -54,7 +53,7 @@
 }
 
 .text {
-    background-color: rgb(227, 193, 194);
+    background-color: #E3C1C2;
     padding: 25px;
     border-radius: 10px;
     margin: 10px 5px 10px 5px;
@@ -68,7 +67,7 @@
 .website-pic {
     height: 100px;
     margin-top: 8px;
-    border: 1pt solid salmon;
+    border: 1pt solid #FA8072;
     padding: 5px;
 }
 
@@ -96,8 +95,8 @@ label {
 .button-style {
     font-size: 14pt;
     border-radius: 10px;
-    border: 2pt solid salmon;
-    background-color: rgb(252, 93, 76);
+    border: 2pt solid #FA8072;
+    background-color: #FC5D4C;
     margin-bottom: 40px;
     padding: 3px;
     text-align: center;
@@ -108,7 +107,7 @@ label {
 }
 
 .button-style:active {
-    box-shadow: inset -2px -2px 3px salmon
+    box-shadow: inset -2px -2px 3px #FA8072
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 

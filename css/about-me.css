@@ -33,7 +33,7 @@
 }
 
 .menu:hover {
-    background-color: white;
+    background-color: #FFF;
 }
 
 .content {
@@ -44,7 +44,7 @@
 }
 
 .text {
-    background-color: rgb(227, 193, 194);
+    background-color: #E3C1C2;
     padding: 25px;
     border-radius: 10px;
     margin: 10px 5px 10px 5px;
@@ -60,7 +60,6 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    border-radius: 10px;
     margin-top: 10px;
     padding-top: 5px;
 }
