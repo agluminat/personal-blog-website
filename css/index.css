@@ -1,0 +1,155 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800&display=swap&subset=latin-ext');
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    padding: 5px;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    background-color: #5995DA;
+}
+
+.nav-menu {
+    background-color: #B2D6FF;
+}
+
+.menu {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.menu:hover {
+    background-color: white;
+}
+
+.content {
+    background-color: #F09A9D;
+    display: grid;
+    grid-gap: 20px;
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+    min-height: calc()
+}
+
+.text {
+    padding: 15px;
+}
+
+.card-fig {
+    border: 2pt #F09A9D solid;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-top: 5px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.card-pic {
+    border-radius: 10px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card {
+    background-color: rgb(227, 193, 194);
+    padding: 5px;
+    border-radius: 10px;
+    align-items: flex-start;
+}
+
+.card-head {
+    font-weight: 800;
+}
+
+.post-date {
+    font-style: italic;
+}
+
+.post-link {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.post-link:hover {
+    background-color: #F09A9D;
+    color: white;
+}
+
+.footer {
+    background-color: #F5CF8E;
+    flex-direction: column;
+}
+
+.social {
+    padding: 5px;
+    display: inline-block;
+    list-style-type: none;
+    width: 30px;
+    height: 30px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    .head {
+        height: 80px;
+    }
+
+    .nav-menu {
+        height: 120px;
+    }
+
+    .menu {
+        display: block;
+        padding: 1px;
+    }
+
+    .content {
+        min-height: calc(100vh - 200px);
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .head,
+    .nav-menu {
+        height: 80px;
+    }
+
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+        min-height: calc(100vh - 160px)
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .page {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .head,
+    .nav-menu {
+        height: 100px;
+    }
+
+    .content {
+        grid-template-columns: repeat(3, 1fr);
+        min-height: calc(100vh - 200px)
+    }
+}

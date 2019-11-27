@@ -1,4 +1,4 @@
-@import "reset.css";
+@import "./reset.css";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800&display=swap&subset=latin-ext');
 
 .page {
@@ -18,11 +18,11 @@
     align-items: center;
 }
 
-.header {
+.head {
     background-color: #5995DA;
 }
 
-.nav {
+.nav-menu {
     background-color: #B2D6FF;
 }
 
@@ -38,61 +38,48 @@
 
 .content {
     background-color: #F09A9D;
-    display: grid;
-    grid-gap: 20px;
-    padding: 5px 0 5px 0;
+    border-radius: 10px;
     margin-top: 10px;
-    min-height: calc()
+    grid-gap: 20px;
 }
 
 .text {
-    padding: 15px;
-}
-
-.card-fig {
-    border: 2pt #F09A9D solid;
-    border-radius: 10px;
-    margin-top: 10px;
-    padding-top: 5px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.card-pic {
-    border-radius: 10px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.card {
     background-color: rgb(227, 193, 194);
-    padding: 5px;
+    padding: 25px;
     border-radius: 10px;
-    align-items: flex-start;
-}
-
-.card-head {
-    font-weight: 800;
+    margin: 10px 5px 10px 5px;
 }
 
 .post-date {
     font-style: italic;
+    margin-top: 10px;
 }
 
-.post-link {
-    font-style: italic;
+.post-fig {
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.post-pic {
+    border-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.main-link {
     text-decoration: underline;
-}
-
-.post-link:hover {
-    background-color: #F09A9D;
-    color: white;
+    margin-left: 3px;
 }
 
 .footer {
     background-color: #F5CF8E;
     flex-direction: column;
+    padding-top: 5px;
 }
 
 .social {
@@ -105,11 +92,11 @@
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-    .header {
+    .head {
         height: 80px;
     }
 
-    .nav {
+    .nav-menu {
         height: 120px;
     }
 
@@ -125,31 +112,30 @@
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-    .header,
-    .nav {
+    .head,
+    .nav-menu {
         height: 80px;
     }
 
     .content {
-        grid-template-columns: repeat(2, 1fr);
-        min-height: calc(100vh - 160px)
+        width: 100%;
+        min-height: calc(100vh - 165px);
     }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+    .head,
+    .nav-menu {
+        height: 100px;
+    }
+
     .page {
         width: 960px;
         margin: 0 auto;
     }
 
-    .header,
-    .nav {
-        height: 100px;
-    }
-
     .content {
-        grid-template-columns: repeat(3, 1fr);
-        min-height: calc(100vh - 200px)
+        min-height: calc(100vh - 293px);
     }
 }
