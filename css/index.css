@@ -1,5 +1,6 @@
 @import "./reset.css";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 
 .page {
     display: flex;
@@ -47,6 +48,10 @@
 
 .text {
     padding: 15px;
+}
+
+.card-text {
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .card-fig {
